@@ -65,10 +65,6 @@ Through this project, I practiced:
 
 **Repository:** `SCT_WD_4`
 
-## 📌 Author
 
-**Tanu Patil**
-
----
 
 ⭐ If you find this project useful, feel free to explore the repository.
