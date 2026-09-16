@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App | SkillCraft Task 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>My To-Do List</h1>
+            <p>Organize your tasks and manage your time</p>
+        </header>
+
+        <!-- Add Task Section -->
+        <div class="task-input">
+
+            <input type="text" id="taskInput" placeholder="Enter a task...">
+
+            <input type="date" id="taskDate">
+
+            <input type="time" id="taskTime">
+
+            <select id="taskList">
+                <option value="Personal">Personal</option>
+                <option value="Work">Work</option>
+                <option value="Study">Study</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <button id="addBtn">Add Task</button>
+
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="filters">
+
+            <button class="filter active" data-filter="all">
+                All
+            </button>
+
+            <button class="filter" data-filter="pending">
+                Pending
+            </button>
+
+            <button class="filter" data-filter="completed">
+                Completed
+            </button>
+
+        </div>
+
+        <!-- Task Statistics -->
+        <div class="stats">
+
+            <div>
+                <h3 id="totalTasks">0</h3>
+                <span>Total</span>
+            </div>
+
+            <div>
+                <h3 id="pendingTasks">0</h3>
+                <span>Pending</span>
+            </div>
+
+            <div>
+                <h3 id="completedTasks">0</h3>
+                <span>Completed</span>
+            </div>
+
+        </div>
+
+        <!-- Task List -->
+        <div id="taskContainer"></div>
+
+        <p id="emptyMessage">No tasks available.</p>
+
+    </div>
+
+    <!-- Edit Modal -->
+    <div class="modal" id="editModal">
+
+        <div class="modal-content">
+
+            <h2>Edit Task</h2>
+
+            <input type="text" id="editTaskInput">
+
+            <input type="date" id="editTaskDate">
+
+            <input type="time" id="editTaskTime">
+
+            <select id="editTaskList">
+                <option value="Personal">Personal</option>
+                <option value="Work">Work</option>
+                <option value="Study">Study</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <div class="modal-buttons">
+                <button id="saveEdit">Save Changes</button>
+                <button id="cancelEdit">Cancel</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
